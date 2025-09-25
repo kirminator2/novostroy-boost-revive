@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Hero } from "@/components/Hero";
 import { MortgageCalculator } from "@/components/MortgageCalculator";
-import { InteractiveMap } from "@/components/InteractiveMap";
+import { DistrictBlocks } from "@/components/DistrictBlocks";
 import { Testimonials } from "@/components/Testimonials";
 import { Quiz } from "@/components/Quiz";
 import { CallbackModal } from "@/components/CallbackModal";
@@ -18,7 +18,7 @@ const Index = () => {
         onOpenCallback={() => setCallbackOpen(true)}
       />
       <MortgageCalculator onOpenQuiz={() => setQuizOpen(true)} />
-      <InteractiveMap onOpenQuiz={() => setQuizOpen(true)} />
+      <DistrictBlocks onOpenQuiz={() => setQuizOpen(true)} />
       <Testimonials />
       <Footer />
       

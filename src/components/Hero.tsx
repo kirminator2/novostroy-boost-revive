@@ -85,7 +85,7 @@ export function Hero({ onOpenQuiz, onOpenCallback }: HeroProps) {
                 onClick={onOpenCallback}
                 size="lg"
                 variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8 py-6 text-lg rounded-xl hover-scale"
+                className="border-white/30 text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm px-8 py-6 text-lg rounded-xl hover-scale"
               >
                 <Phone className="mr-2 h-5 w-5" />
                 Заказать звонок

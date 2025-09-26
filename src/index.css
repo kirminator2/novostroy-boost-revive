@@ -18,10 +18,10 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 24% 16%;
 
-    /* Primary - Emerald */
-    --primary: 158 64% 42%;
+    /* Primary - Green (trust color) */
+    --primary: 142 71% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 158 64% 52%;
+    --primary-glow: 142 71% 55%;
     
     /* Secondary - Teal */
     --secondary: 173 80% 36%;
@@ -88,9 +88,9 @@ All colors MUST be HSL.
     --popover: 210 24% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 158 64% 42%;
+    --primary: 142 71% 45%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 158 64% 52%;
+    --primary-glow: 142 71% 55%;
 
     --secondary: 173 80% 36%;
     --secondary-foreground: 0 0% 100%;
@@ -249,5 +249,13 @@ All colors MUST be HSL.
 
   ::-webkit-scrollbar-thumb:hover {
     background: hsl(var(--primary-glow));
+  }
+  
+  /* Grid Pattern Background */
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 50px 50px;
   }
 }
